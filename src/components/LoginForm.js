@@ -1,7 +1,6 @@
 import React, { useState } from "react";
-import userData from "../data/credentials"
 
-export default function LoginForm({onLogin = f => f}) {
+export default function LoginForm({userData, loginHandler = f => f}) {
 
     const [credentials, setCredentials] = useState({
         email: "",
@@ -40,7 +39,7 @@ export default function LoginForm({onLogin = f => f}) {
         let user = validate();
         if(user !== false) {
             setLogged(true);
-            onLogin(user);
+            loginHandler(user);
         }
     }
 

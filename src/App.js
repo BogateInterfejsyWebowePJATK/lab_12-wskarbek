@@ -1,10 +1,10 @@
-import Calculator from './components/Calculator';
+import LoginAndRegister from './components/LoginAndRegister';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <Calculator/>
+        <LoginAndRegister/>
       </header>
     </div>
   );

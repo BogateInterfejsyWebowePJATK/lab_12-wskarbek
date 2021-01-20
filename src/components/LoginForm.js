@@ -47,7 +47,7 @@ export default function LoginForm({onLogin = f => f}) {
     return (
         <form onSubmit={submit}>
             <p>{error}</p>
-            <label>E-mail</label><input value={credentials.login} type="text" required onChange={
+            <label>E-mail</label><input value={credentials.email} type="text" required onChange={
                 (e) => {setCredentials({email: e.target.value, pass: credentials.pass})}
             }/>
             <label>Password</label><input value={credentials.pass} type="password" required onChange={
